@@ -5,8 +5,8 @@ import {
     View,
     Image,
 } from 'react-native';
-import {calc} from "../../lib/WidthUtil";
-import {FetchData} from "../../lib/Fetch";
+import {calc} from "../../../lib/WidthUtil";
+import {FetchData} from "../../../lib/Fetch";
 import Swiper from 'react-native-swiper'
 
 export default class HeroHeaderBanner extends Component {

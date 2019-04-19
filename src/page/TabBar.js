@@ -51,12 +51,12 @@ const TabBar = props => {
                   return isRouteActive ? (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/hero_s.png")}
+                      source={require("../assets/images/tab_bar/hero_s.png")}
                     />
                   ) : (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/hero_n.png")}
+                      source={require("../assets/images/tab_bar/hero_n.png")}
                     />
                   )
                   break
@@ -64,12 +64,12 @@ const TabBar = props => {
                   return isRouteActive ? (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/demand_s.png")}
+                      source={require("../assets/images/tab_bar/demand_s.png")}
                     />
                   ) : (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/demand_n.png")}
+                      source={require("../assets/images/tab_bar/demand_n.png")}
                     />
                   )
                   break
@@ -77,12 +77,12 @@ const TabBar = props => {
                   return isRouteActive ? (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/submit_s.png")}
+                      source={require("../assets/images/tab_bar/submit_s.png")}
                     />
                   ) : (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/submit_n.png")}
+                      source={require("../assets/images/tab_bar/submit_n.png")}
                     />
                   )
                   break
@@ -90,24 +90,24 @@ const TabBar = props => {
                   return isRouteActive ? (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/message_s.png")}
+                      source={require("../assets/images/tab_bar/message_s.png")}
                     />
                   ) : (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/message_n.png")}
+                      source={require("../assets/images/tab_bar/message_n.png")}
                     />
                   )
                 case "我的":
                   return isRouteActive ? (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/person_s.png")}
+                      source={require("../assets/images/tab_bar/person_s.png")}
                     />
                   ) : (
                     <Image
                       style={styles.tabImg}
-                      source={require("../assets/images/person_n.png")}
+                      source={require("../assets/images/tab_bar/person_n.png")}
                     />
                   )
                   break

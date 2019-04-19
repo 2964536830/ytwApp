@@ -14,7 +14,7 @@ export default class WelecomePage extends Component {
 
     this.timer = setTimeout(() => {
       navigation.navigate("Main")
-    }, 2000)
+    }, 200)
   }
   componentWillUnMount() {
     this.timer && clearTimeout(this.timer)
@@ -22,7 +22,7 @@ export default class WelecomePage extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>WelecomePage</Text>
+        <Text>欢迎来到英桃网APP</Text>
       </View>
     )
   }

@@ -1,7 +1,7 @@
 import { Dimensions, StatusBar, Platform, PixelRatio } from "react-native"
 
 //UI设计图的宽度
-const designWidth = 750
+const designWidth = 375
 //UI设计图的高度
 const designHeight = 1334
 
@@ -23,6 +23,10 @@ export const titleHeight = unitWidth * 100 + statusBarHeight
 // 当应用中的字体需要根据手机设置中字体大小改变的话需要用到缩放比例
 export const fontscale = PixelRatio.getFontScale()
 
+export function calc(size) {
+  return (size * width) / designWidth
+}
+
 /**
  * 判断是否为iphoneX
  * @returns {boolean}
@@ -40,4 +44,14 @@ export function getStatusBarHeight() {
     return 44
   }
   return 20
+}
+// iphoneX 顶部留白的兼容处理
+export function isIPhoneXPaddTop(number) {
+  number = isNaN(+number) ? 0 : +number
+  return number + (isIphoneX() ? 44 : 20)
+}
+//iPhoneX 底部高度兼容处理
+export function isIPhoneXFooter(number) {
+  number = isNaN(+number) ? 0 : +number
+  return number + (isIphoneX() ? 34 : 0)
 }

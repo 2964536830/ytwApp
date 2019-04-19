@@ -12,7 +12,7 @@ import {
 import { connect } from "react-redux"
 import {
   createReactNavigationReduxMiddleware,
-  createReduxContainer 
+  createReduxContainer
 } from "react-navigation-redux-helpers"
 
 import WelecomePage from "../page/WelecomePage"
@@ -24,6 +24,7 @@ import BoleDetail from "../page/Bole/BoleDetail"
 import Publish from "../page/Publish"
 import Message from "../page/Message"
 import User from "../page/User/User"
+import Jiedan from "../page/User/Jiedan"
 
 const InitNavigator = createStackNavigator({
   WelecomePage: {
@@ -81,6 +82,12 @@ const MainNavigator = createStackNavigator({
     navigationOptions: {
       header: null // 设置header为Null隐藏导航栏来达到全屏效果
     }
+  },
+  Jiedan: {
+    screen: Jiedan,
+    navigationOptions: {
+      header: null // 设置header为Null隐藏导航栏来达到全屏效果
+    }
   }
 })
 export const rootCom = "Init" //设置根路由
@@ -96,7 +103,7 @@ export const middleware = createReactNavigationReduxMiddleware(
   state => state.nav
 )
 
-const AppWithNavigationState = createReduxContainer (RootNavigator, "root")
+const AppWithNavigationState = createReduxContainer(RootNavigator, "root")
 
 /**
  * State到Props的映射关系

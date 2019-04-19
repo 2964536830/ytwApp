@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {Platform, Button, StyleSheet, TextInput, Text, View, Image} from "react-native"
 import {connect} from "react-redux"
-import {isIPhoneXPaddTop, calc} from "../../lib/WidthUtil"
+import {isIPhoneXPaddTop, calc} from "../../../lib/WidthUtil"
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
